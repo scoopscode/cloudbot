@@ -16,6 +16,5 @@ module.exports = {
             .setFooter('Made by Scoopy')
             .setTimestamp()
             message.channel.send(embed);
-            break;
 	},
 };
