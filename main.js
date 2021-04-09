@@ -45,4 +45,16 @@ fs.readdir("./commands/", (err, files) => {
     });
 });
 
+//Basic commands
+client.on('message', message => {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+	const args = message.content.slice(prefix.length).trim().split(/ +/);
+	const command = args.shift().toLowerCase();
+
+	if(command === 'ping'){
+        client.commands.get('hello').execute(message, args);
+    }
+});
+
 bot.login(process.env.token)
