@@ -54,7 +54,8 @@ bot.on('message', message => {
 
 	if(command === 'hello'){
         bot.commands.get('hello').execute(message, args);
-    }
+    } else if (command === 'serverinfo');
+        bot.commands.get('userinfo');
 });
 
 bot.login(process.env.token)
