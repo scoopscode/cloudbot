@@ -47,7 +47,7 @@ fs.readdir("./commands/", (err, files) => {
 
 //Basic commands
 bot.on('message', message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (!message.content.startsWith(PREFIX) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
