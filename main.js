@@ -7,7 +7,7 @@ const chalk = require('chalk');
 
 const fs = require('fs')
 
-const PREFIX = '$';
+const PREFIX = '^';
 
 bot.on('ready', () =>{
     console.log(chalk.magenta.bold('Sheesh machine online'));
