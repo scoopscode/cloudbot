@@ -1,3 +1,6 @@
+const Discord = require('discord.js');
+const {Client, Attachment, MessageEmbed} = require('discord.js');
+
 module.exports = {
 	name: 'userinfo',
 	description: 'Provides user information',
