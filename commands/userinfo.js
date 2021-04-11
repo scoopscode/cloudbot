@@ -13,7 +13,7 @@ module.exports = {
             .setAuthor(message.author.username)
             .addField('Username:', message.author.username)
             .addField('Current server:', message.guild.name)
-            .addField('Users Account Birthday🎂', message.author.createdAt())
+            .addField('Users Account Birthday🎂', message.author.createdAt)
             .addField('Users tag', message.author.tag)
             .addField('Account ID', message.author.id)
             .setFooter('Made by Scoopy')
