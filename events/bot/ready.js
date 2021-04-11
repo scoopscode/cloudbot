@@ -1,3 +1,5 @@
+const chalk = require('chalk');
+
 module.exports = () =>{
     console.log(chalk.magenta.bold('Sheesh machine online'));
     bot.user.setActivity('In development | ^', {
