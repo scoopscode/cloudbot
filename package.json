@@ -5,7 +5,9 @@
   "main": "main.js",
   "dependencies": {
     "chalk": "^4.1.0",
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "yt-search": "^2.7.6",
+    "ytdl-core": "^4.5.0"
   },
   "devDependencies": {},
   "scripts": {
