@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'hello',
 	description: 'Just say Hello',
-	execute(message, args) {
+	async execute(bot, message, args) {
 		message.channel.send('Hello!');
 	}
 }
