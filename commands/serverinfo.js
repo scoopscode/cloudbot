@@ -29,7 +29,7 @@ module.exports = {
         "russia": ":flag_ru: Russia",
         "southafrica": ":flag_za:  South Africa"
     };
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL)
         .addField("Name", message.guild.name, true)
         .addField("ID", message.guild.id, true)
