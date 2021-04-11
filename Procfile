@@ -1,1 +1,1 @@
-Worker: node ready.js
+Worker: node main.js

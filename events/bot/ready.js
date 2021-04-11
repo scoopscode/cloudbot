@@ -18,4 +18,3 @@ module.exports = () =>{
     }, 10000)
 }
 
-bot.login(process.env.token)
