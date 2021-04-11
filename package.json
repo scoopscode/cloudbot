@@ -6,6 +6,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "discord.js": "^12.5.1",
+    "moment": "^2.29.1",
     "yt-search": "^2.7.6",
     "ytdl-core": "^4.5.0"
   },
