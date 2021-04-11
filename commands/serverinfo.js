@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const { execute } = require("./hello");
 
 module.exports = {
-    name: 'userinfo',
-    description: 'Provides user information',
+    name: 'serverinfo',
+    description: 'Provides server information',
     async execute(bot, message, args) {
     function checkDays(date) {
         let now = new Date();
