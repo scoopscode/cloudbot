@@ -4,7 +4,7 @@ const {Client, Attachment, MessageEmbed} = require('discord.js');
 module.exports = {
 	name: 'userinfo',
 	description: 'Provides user information',
-	execute(message, args) {
+	execute(bot, message, args) {
             const embed = new Discord.MessageEmbed()
             .setTitle('User information')
             .setThumbnail(message.author.displayAvatarURL())
