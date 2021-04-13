@@ -3,7 +3,7 @@ const ytdl = require('ytdl-core');
 
 module.exports = {
 	name: 'play',
-	description: 'Play command.',
+	description: 'Play command for music portion of bot',
 	async execute(bot, message, args) {
 		const { channel } = message.member.voice;
 		if (!channel) return message.channel.send('I\'m sorry but you need to be in a voice channel to play music!');
@@ -51,7 +51,7 @@ module.exports = {
 				})
 				.on('error', error => console.error(error));
 			dispatcher.setVolumeLogarithmic(queue.volume / 5);
-			queue.textChannel.send(`🎶 Start playing: **${song.title}**`);
+			queue.textChannel.send(`🎶 Let's jam!: **${song.title}**`);
 		};
 
 		try {
