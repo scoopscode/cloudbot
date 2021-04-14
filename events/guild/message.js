@@ -5,7 +5,7 @@ module.exports = (Discord, bot, message) => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const cmd = args.shift().toLowerCase();
 
-    const command = bot.commands.get(cmd);
+    const command = bot.commands.get(cmd) || bot.commands.find(a => a.aliases.includes(cmd));
 
     if(command) command.execute(bot, message, args, Discord);
 }

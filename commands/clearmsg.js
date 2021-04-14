@@ -1,5 +1,6 @@
 module.exports = {
     name: 'clear',
+    aliases: [`purge`],
     description: "Clears an amount of messages",
     async execute(bot, message, args) {
         if(!args[0]) return message.reply("**please enter a valid amount!**```EXPECTED: clear <amount>```");
