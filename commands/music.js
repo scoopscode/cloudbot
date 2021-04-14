@@ -8,8 +8,6 @@ module.exports = {
     aliases: ['skip', 'stop'],
     description: 'Advanced music bot',
     async execute(bot, message, args, cmd){
-
-
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('You need to be in a channel to execute this command!');
         const permissions = voice_channel.permissionsFor(message.client.user);
