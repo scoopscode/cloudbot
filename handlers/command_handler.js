@@ -11,4 +11,44 @@ module.exports = (bot, Discord) => {
             continue;
         }
     }
+    for(const file of command_files){
+        const command = require(`../commands/fun/${file}`);
+        if(command.name){
+            bot.commands.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
+    for(const file of command_files){
+        const command = require(`../commands/information/${file}`);
+        if(command.name){
+            bot.commands.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
+    for(const file of command_files){
+        const command = require(`../commands/misc/${file}`);
+        if(command.name){
+            bot.commands.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
+    for(const file of command_files){
+        const command = require(`../commands/moderation/${file}`);
+        if(command.name){
+            bot.commands.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
+    for(const file of command_files){
+        const command = require(`../commands/music/${file}`);
+        if(command.name){
+            bot.commands.set(command.name, command);
+        } else {
+            continue;
+        }
+    }
 }
