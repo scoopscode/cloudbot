@@ -4,5 +4,5 @@ const chalk = require('chalk');
 const fs = require('fs');
 
 module.exports = () =>{
-    console.log(chalk.magenta.bold('Sheesh machine online')).catch(console.log);
+    console.log(chalk.magenta.bold('Sheesh machine online'))
 }
