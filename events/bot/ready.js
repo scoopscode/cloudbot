@@ -19,7 +19,7 @@ module.exports = () =>{
             `lop`,
         ]
 
-        const status = statuses[Math.floor(Math.random() * 3)]
+        const status = statuses[Math.floor(Math.random() * 6)]
         bot.user.setActivity(status, {
             type: "PLAYING"
         });
