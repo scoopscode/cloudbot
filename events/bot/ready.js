@@ -5,23 +5,7 @@ const fs = require('fs');
 
 module.exports = () =>{
     console.log(chalk.magenta.bold('Sheesh machine online'));
-    bot.user.setActivity('Hello', {
+    bot.user.setActivity('Made by Scoops', {
         type: "PLAYING"
     }).catch(console.log);
-
-    setInterval(() => {
-        const statuses = [
-            `sup`,
-            `k`,
-            `yo mama`,
-            `lmao`,
-            `^`,
-            `lop`,
-        ]
-
-        const status = statuses[Math.floor(Math.random() * 6)]
-        bot.user.setActivity(status, {
-            type: "PLAYING"
-        });
-    }, 10000)
 }
