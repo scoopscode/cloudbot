@@ -11,7 +11,7 @@ module.exports = (bot, Discord) => {
 
                 const props = require(`${process.cwd()}/commands/${dir}/${file}`);
                 
-                    client.commands.set(props.help.name, props);
+                    bot.commands.set(props.help.name, props);
                 
                     console.log(chalk.white('[Command-loading-logs] All commands loaded successful: ')+chalk.red(`${file}`));
             })
