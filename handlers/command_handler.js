@@ -1,14 +1,20 @@
 const fs = require('fs');
 
 module.exports = (bot, Discord) => {
-    const command_files = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+    fs.readdirSync(`${process.cwd()}/Commands/`).forEach(dir => {
 
-    for(const file of command_files){
-        const command = require(`../commands/${dir}/${file}`);
-        if(command.name){
-            bot.commands.set(command.name, command);
-        } else {
-            continue;
-        }
-    }
+        fs.readdir(`${process.cwd()}/Commands/${dir}/`, (err, files) => {
+        
+            if (err) throw new Error(err);
+
+            files.forEach(file => {
+
+                const props = require(`${process.cwd()}/Commands/${dir}/${file}`);
+                
+                    client.commands.set(props.help.name, props);
+                
+                    console.log(chalk.white('[Command-loading-logs] All commands loaded successful: ')+chalk.red(`${file}`));
+            })
+        })
+    })
 }
