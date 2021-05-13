@@ -23,7 +23,7 @@ module.exports = {
 		if (serverQueue) {
 			serverQueue.songs.push(song);
 			console.log(serverQueue.songs);
-			return message.channel.send(`✅ **${song.title}** has been added to the queue!`);
+			return message.channel.send(`I've queued✅ **${song.title}**!`);
 		}
 
 		const queueConstruct = {
@@ -52,7 +52,7 @@ module.exports = {
 				})
 				.on('error', error => console.error(error));
 			dispatcher.setVolumeLogarithmic(queue.volume / 5);
-			queue.textChannel.send(`🎶 Start playing: **${song.title}**`);
+			queue.textChannel.send(`🎶 Let's jam!: **${song.title}**`);
 		};
 
 		try {

@@ -1,6 +1,6 @@
 {
   "name": "scoopscode3",
-  "version": "1.0.0",
+  "version": "5.1.0",
   "description": "Scoopys new bot",
   "main": "main.js",
   "dependencies": {
